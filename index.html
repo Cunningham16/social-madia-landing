@@ -21,7 +21,7 @@
                     </a>
                     <div class="navigation__page">
                         <ul class="nav-list">
-                            <li class="nav__element nav__element_active"><a href="">Features</a></li>
+                            <li class="nav__element"><a href="">Features</a></li>
                             <li class="nav__element"><a href="">Stories</a></li>
                             <li class="nav__element"><a href="">Community</a></li>
                             <li class="nav__element"><a href="">Blog</a></li>
@@ -30,8 +30,12 @@
                 </div>
                 <div class="right__align__nav">
                     <div class="registration__block">
-                        <button class="log__in__button">Log in</button>
-                        <button class="detail__button">Register</button>
+                        <a href="pages/form-registration.html">
+                            <button class="log__in__button" href="">Log in</button>
+                        </a>
+                        <a href="pages/form-registration.html">
+                            <button class="detail__button">Register</button>
+                        </a>
                     </div>
                     <div class="settings__container">
                         <button class="settings__button">
@@ -43,7 +47,7 @@
     </header>
     <main>
         <div class="wrapper">
-            <section class="main__section">
+            <section class="main__section main__section_first">
                 <div class="main-page__text">
                     <h1>Sed Imperdiet Enim li Vitae Viverra Justo</h1>
                     <h3>Nam sollicitud nunc, cursus eros vulputate sed. Vestibulum lobortis.</h3>
@@ -54,6 +58,32 @@
                 </div>
                 <div class="main__page__image">
                     <img src="img/main-page-img.png" alt="main-img">
+                </div>
+            </section>
+            <section class="main__section hidden main__section_second">
+                <div class="main__page__image">
+                    <img src="img/banner-right.png" alt="main-img">
+                </div>
+                <div class="main-page__text">
+                    <h1>Sed Imperdiet Enim li Vitae Viverra Justo</h1>
+                    <h3>Nam sollicitud nunc, cursus eros vulputate sed. Vestibulum lobortis.</h3>
+                    <div class="buttons__mobile__download">
+                        <a href=""><button class="learn-more__button">LEARN MORE</button></a>
+                        <a href=""><button class="get-started__button">GET STARTED</button></a>
+                    </div>
+                </div>
+            </section>
+            <section class="main__section main__section_center hidden main__section_third">
+                <div class="main-page__text">
+                    <h1>Sed Imperdiet Enim</h1>
+                    <h3>Nam sollicitud nunc, cursus eros vulputate</h3>
+                    <div class="buttons__mobile__download">
+                        <a href=""><button class="learn-more__button">LEARN MORE</button></a>
+                        <a href=""><button class="get-started__button">GET STARTED</button></a>
+                    </div>
+                </div>
+                <div class="main__page__image">
+                    <img src="img/banner-center.png" alt="main-img">
                 </div>
             </section>
         </div>
@@ -74,7 +104,7 @@
                 </div>
             </section>
         </div>
-
+        <div class="features-section">
         <div class="wrapper">
             <section class="features">
                 <div class="header-section">
@@ -133,9 +163,10 @@
                 </div>
             </section>
         </div>
+        </div>
 
         <div class="wrapper">
-            <section class="stories-block">
+            <section class="stories-section stories-block">
                 <div class="header-section">
                     <h2>Stories</h2>
                 </div><br><br>
@@ -172,8 +203,8 @@
 
         <div class="wrapper">
             <br><br>
-            <div class="header-section">
-                <h2>Stories</h2>
+            <div class="header-section community-section">
+                <h2>Community</h2>
             </div>
             <section class="communities-block">
                 <div class="community__card">
@@ -232,7 +263,7 @@
 
         <div class="wrapper">
             <br><br>
-                <div class="header-section">
+                <div class="header-section blog-section">
                     <h2>Whats update?</h2>
                 </div>
             <section class="news-block">
@@ -262,9 +293,100 @@
                 </div>
             </section>
         </div>
+        <div class="wrapper">
+            <section class="download-app">
+                <h2>What are you waiting for? Download now!</h2>
+                <div class="download-app__links">
+                    <a href="#"><img src="img/Google-app.png" alt=""></a>
+                    <a href="#"><img src="img/Apple-app.png" alt=""></a>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer></footer>
-    <img src="img/luquid-footer.svg" alt="" class="footer-img">
+    <footer>
+        <div class="wrapper">
+            <div class="footer-container">
+                <section class="logo-footer">
+                    <a href=""><img src="img/logo.svg" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, optio qui.</p>
+                    <p>@Cunningham16</p>
+                </section>
+                <section class="nav-footer">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="">Donec dignissim</a></li>
+                        <li><a href="">Curabitur egestas</a></li>
+                        <li><a href="">Nam posuere</a></li>
+                        <li><a href="">Aenean facilisis</a></li>
+                    </ul>
+                </section>
+                <section class="nav-footer">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="">Donec dignissim</a></li>
+                        <li><a href="">Curabitur egestas</a></li>
+                        <li><a href="">Nam posuere</a></li>
+                        <li><a href="">Aenean facilisis</a></li>
+                    </ul>
+                </section>
+                <section class="nav-footer">
+                    <h4>RESOURSES</h4>
+                    <ul>
+                        <li><a href="">Donec dignissim</a></li>
+                        <li><a href="">Curabitur egestas</a></li>
+                        <li><a href="">Nam posuere</a></li>
+                    </ul>
+                </section>
+                <section class="social-translate">
+                    <div class="social-icons">
+                        <a href="">
+                            <div class="icon-container"><img src="img/social-facebook.png" alt=""></div>
+                        </a>
+                        <a href="">
+                            <div class="icon-container"><img src="img/social-instagram.png" alt=""></div>
+                        </a>
+                        <a href="">
+                            <div class="icon-container"><img src="img/social-linkedin.png" alt=""></div>
+                        </a>
+                        <a href="">
+                            <div class="icon-container"><img src="img/social-twitter.png" alt=""></div>
+                        </a>
+                    </div>
+                    <div class="translate-container">
+                        <div class="input-translate">
+                            <img src="img/android-globe.png" alt="" class="globe">
+                            <p>English - en</p>
+                            <img src="img/chevron-down.png" alt="" class="arrow-translate">
+                        </div>
+                        <div class="list-translates"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <div class="navigator-fixed">
+        <div class="navigator-fixed__element navigator-fixed__element_active">
+            <p class="text-nav">Features</p>
+            <button class="navigate-button_active"></button>
+        </div>
+        <div class="navigator-fixed__element">
+            <p class="text-nav">Stories</p>
+            <button class="navigate-button"></button>
+        </div>
+        <div class="navigator-fixed__element">
+            <p class="text-nav">Community</p>
+            <button class="navigate-button"></button>
+        </div>
+        <div class="navigator-fixed__element">
+            <p class="text-nav">Blog</p>
+            <button class="navigate-button"></button>
+        </div>
+        <button class="up-nav">
+            <img src="img/icon-up.svg" alt="">
+        </button>
+    </div>
 </body>
-    <script src="js/index.js"></script>
+    <script src="js/navigation-script.js"></script>
+    <script src="js/first-slider.js"></script>
+    <script src="js/second-slider.js"></script>
 </html>
