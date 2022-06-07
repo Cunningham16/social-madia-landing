@@ -846,3 +846,12 @@ nav{
 .main__section_second, .main__section_third{
     height: 403px;
 }
+
+.error__password{
+    border: 1px solid red!important;
+}
+
+.error__password::after{
+    display: block;
+    content: "Invalid password"
+}
