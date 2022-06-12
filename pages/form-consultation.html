@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Consultation</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style-registration-form.css">
+    <link rel="stylesheet" href="../css/style-consultation-form.css">
     <link rel="stylesheet" href="../css/style-mobile.css">
 </head>
 <body>
+    <img src="../img/Liquid Bg.png" alt="bg" class="liquid__bg">
     <header>
         <div class="wrapper">
             <section class="nav-mobile">
@@ -23,7 +24,10 @@
                     <div class="hamburger__list">
                         <div class="registration__block">
                         <a href="../pages/form-login.html">
-                            <button class="log__in__button">Log in</button>
+                            <button class="log__in__button" href="">Log in</button>
+                        </a>
+                        <a href="../pages/form-registration.html">
+                            <button class="detail__button">Register</button>
                         </a>
                     </div>
                     <div class="settings__container">
@@ -37,14 +41,17 @@
             </section>
             <nav>
                 <div class="left__align__nav">
-                    <a href="../index.html">
+                    <a href="">
                         <img src="../img/logo.svg" alt="logo">
                     </a>
                 </div>
                 <div class="right__align__nav">
                     <div class="registration__block">
-                        <a href="form-login.html">
+                        <a href="../pages/form-login.html">
                             <button class="log__in__button" href="">Log in</button>
+                        </a>
+                        <a href="../pages/form-registration.html">
+                            <button class="detail__button">Register</button>
                         </a>
                     </div>
                     <div class="settings__container">
@@ -55,62 +62,37 @@
                 </div>
             </nav>
     </header>
-    <main>
-        <div class="wrapper">
-            <section class="registration">
-                <form action="#" class="registration-block" name="registration">
-                    <h3>Create account</h3>
-                    <div class="buttons-services">
-                        <a href="#">
-                            <button class="facebook-reg-button">
-                                <img src="../img/social-facebook-login.png" alt="facebook">
-                                <p>FACEBOOK</p>
-                            </button>
-                        </a><a href="#">
-                            <button class="twitter-reg-button">
-                                <img src="../img/social-twitter-login.png" alt="twitter">
-                                <p>TWITTER</p>
-                            </button>
-                        </a><a href="#">
-                            <button class="google-reg-button">
-                                <img src="../img/social-google-outline.svg" alt="">
-                                <p>GOOGLE</p>
-                            </button>
-                        </a>
-                    </div>
-                    <p class="reg-email">Or register with email</p>
-                    <div class="name-input__container">
-                        <input name="name" type="text" class="form__name-input form-input" placeholder=" " id="inputName">
-                        <label for="inputName" class="placeholder">Name</label>
-                    </div>
-                    <div class="email-input__container">
-                        <input name="email" autocomplete="username" type="email" class="form__email-input form-input" placeholder=" " id="emailInput">
-                        <label for="emailInput" class="placeholder" >Email</label>
-                    </div>
-                    <div class="pass__container">
-                        <div class="password-input__container">
-                            <input name="password" autocomplete="new-password" type="password" class="form__password-input form-input" placeholder=" " id="inputPassword">
-                            <label for="inputPassword" class="placeholder">Password</label>
-                        </div>
-                        <div class="repeat-input__container">
-                            <input name="repetPassword" id="repeatPass" autocomplete="new-password" type="password" class="form__repeat-password form-input" placeholder=" ">
-                            <label for="repeatPass" class="placeholder">Repeat password*</label>
-                        </div>
-                    </div>
-                    <div class="policy">
-                        <input name="checkbox" type="checkbox" class="policy-check">
-                        <p>I have read and accept the <a href="#" class="link-terms">Terms of Service & Privacy Policy *</a></p>
-                    </div>
-                    <button disabled="true" class="button-submit">CONTINUE</button>
-                </form>
-
-                <section class="description-registration">
-                    <h2>Lorem ipsum dolor sit</h2>
-                    <p>consectetur adipiscing elit. Suspendisse sed urna in justo euismod condimentum.</p>
-                    <img src="../img/registration-form-img.png" alt="">
-                </section>
-            </section>
-        </div>
+    <main class="wrapper">
+        <center>
+            <form action="../index.html" class="form-consultation" name="consultation">
+                <div class="header-section">
+                    <h2>Contact us</h2>
+                </div>
+                <p class="description-text">Aenean sit amet magna vel magna fringilla fermentum. Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.</p>
+                <div class="name-input__container">
+                    <input name="name" type="text" class="form__name-input form-input" placeholder=" " id="inputName">
+                    <label for="inputName" class="placeholder">What is your name? *</label>
+                </div>
+                <div class="email-input__container">
+                    <input name="email" type="email" class="form__email-input form-input" placeholder=" " id="inputEmail">
+                    <label for="inputEmail" class="placeholder">What's your email? *</label>
+                </div>
+                <div class="phone-input__container">
+                    <input name="phone" type="tel" class="form__phone-input form-input" placeholder=" " id="inputPhone">
+                    <label for="inputPhone" class="placeholder">What's your phone number? *</label>
+                </div>
+                <div class="company-input__container">
+                    <input name="company" type="text" class="form__phone-input form-input" placeholder=" " id="inputCompany">
+                    <label for="inputCompany" class="placeholder">What's your company?</label>
+                </div>
+                <textarea name="extraInfo" id="textMessage" cols="30" rows="10" placeholder="Write your message here"></textarea>
+                <div class="policy">
+                    <input name="checkbox" type="checkbox" class="policy-check">
+                    <p>I have read and accept the <a href="#" class="link-terms">Terms of Service & Privacy Policy *</a></p>
+                </div>
+                <button disabled="true" class="button-submit">SEND MESSAGE</button>
+            </form>
+        </center>
     </main>
     <footer>
         <div class="wrapper">
@@ -368,27 +350,6 @@
             </div>
         </div>
     </section>
-    <script src="../js/registration-form.js"></script>
-    <script>
-        let isOpenedBurger = false
-        const burgerButton = document.querySelector(".mobile-button")
-        const burgerInfo = document.querySelector(".hamburger__list")
-
-        function animateBurger(){
-            if(isOpenedBurger === false){
-                burgerInfo.style.transform = 'translate(0, 0)'
-                document.querySelector("body").style.overflow = "hidden"
-                isOpenedBurger = true
-            }else{
-                burgerInfo.style.transform = 'translate(100%, 0)'
-                document.querySelector("body").style.overflow = "auto"
-                isOpenedBurger = false
-            }
-        }
-
-        burgerButton.onclick = function(){
-            animateBurger()
-        }
-    </script>
+    <script src="../js/consultation-form.js"></script>
 </body>
 </html>

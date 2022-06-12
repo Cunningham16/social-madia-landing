@@ -112,11 +112,33 @@ for(let button of arr_nav){
     }
 }
 
+let isOpenedBurger = false
+const burgerButton = document.querySelector(".mobile-button")
+const burgerInfo = document.querySelector(".hamburger__list")
+
 for(let i of arr_nav_top){
     i.onclick = function(e){
         e.preventDefault()
         let index = arr_nav_top.indexOf(i)
-
+        if(isOpenedBurger === true){
+            animateBurger()
+        }
         deployScroll(index)
     }
+}
+
+function animateBurger(){
+    if(isOpenedBurger === false){
+        burgerInfo.style.transform = 'translate(0, 0)'
+        document.querySelector("body").style.overflow = "hidden"
+        isOpenedBurger = true
+    }else{
+        burgerInfo.style.transform = 'translate(100%, 0)'
+        document.querySelector("body").style.overflow = "auto"
+        isOpenedBurger = false
+    }
+}
+
+burgerButton.onclick = function(){
+    animateBurger()
 }

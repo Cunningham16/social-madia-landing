@@ -8,10 +8,34 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style-registration-form.css">
     <link rel="stylesheet" href="../css/style-login-form.css">
+    <link rel="stylesheet" href="../css/style-mobile.css">
 </head>
 <body>
     <header>
         <div class="wrapper">
+            <section class="nav-mobile">
+                <a href="">
+                    <img src="../img/logo.svg" alt="logo">
+                </a>
+                <div class="hamburger__container">
+                    <button class="mobile-button">
+                        <img src="../img/list.svg" alt="img-logo">
+                    </button>
+                    <div class="hamburger__list">
+                        <div class="registration__block">
+                        <a href="../pages/form-registration.html">
+                            <button class="detail__button">Register</button>
+                        </a>
+                    </div>
+                    <div class="settings__container">
+                        <button class="settings__button">
+                            <img src="../img/gear-fill.svg" alt="img__setting">
+                        </button>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
             <nav>
                 <div class="left__align__nav">
                     <a href="../index.html">
@@ -143,5 +167,26 @@
             </div>
         </div>
     </footer>
+    <script>
+        let isOpenedBurger = false
+        const burgerButton = document.querySelector(".mobile-button")
+        const burgerInfo = document.querySelector(".hamburger__list")
+
+        function animateBurger(){
+            if(isOpenedBurger === false){
+                burgerInfo.style.transform = 'translate(0, 0)'
+                document.querySelector("body").style.overflow = "hidden"
+                isOpenedBurger = true
+            }else{
+                burgerInfo.style.transform = 'translate(100%, 0)'
+                document.querySelector("body").style.overflow = "auto"
+                isOpenedBurger = false
+            }
+        }
+
+        burgerButton.onclick = function(){
+            animateBurger()
+        }
+    </script>
 </body>
 </html>

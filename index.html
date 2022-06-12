@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social landing</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,6 +15,39 @@
     <img src="img/Liquid Bg.png" alt="bg" class="liquid__bg">
     <header>
         <div class="wrapper">
+            <section class="nav-mobile">
+                <a href="">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <div class="hamburger__container">
+                    <button class="mobile-button">
+                        <img src="img/list.svg" alt="img-logo">
+                    </button>
+                    <div class="hamburger__list">
+                        <ul class="nav-list">
+                            <li class="nav__element"><a href="">Features</a></li>
+                            <li class="nav__element"><a href="">Stories</a></li>
+                            <li class="nav__element"><a href="">Community</a></li>
+                            <li class="nav__element"><a href="">Blog</a></li>
+                        </ul>
+
+                        <div class="registration__block">
+                        <a href="pages/form-login.html">
+                            <button class="log__in__button" href="">Log in</button>
+                        </a>
+                        <a href="pages/form-registration.html">
+                            <button class="detail__button">Register</button>
+                        </a>
+                    </div>
+                    <div class="settings__container">
+                        <button class="settings__button">
+                            <img src="img/gear-fill.svg" alt="img__setting">
+                        </button>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
             <nav>
                 <div class="left__align__nav">
                     <a href="">
@@ -68,8 +102,8 @@
                     <h1>Sed Imperdiet Enim li Vitae Viverra Justo</h1>
                     <h3>Nam sollicitud nunc, cursus eros vulputate sed. Vestibulum lobortis.</h3>
                     <div class="buttons__mobile__download">
-                        <a href=""><button class="learn-more__button">LEARN MORE</button></a>
-                        <a href=""><button class="get-started__button">GET STARTED</button></a>
+                        <a href="pages/form-login.html"><button class="learn-more__button">LEARN MORE</button></a>
+                        <a href="pages/form-consultation.html"><button class="get-started__button">GET STARTED</button></a>
                     </div>
                 </div>
             </section>
@@ -78,8 +112,8 @@
                     <h1>Sed Imperdiet Enim</h1>
                     <h3>Nam sollicitud nunc, cursus eros vulputate</h3>
                     <div class="buttons__mobile__download">
-                        <a href=""><button class="learn-more__button">LEARN MORE</button></a>
-                        <a href=""><button class="get-started__button">GET STARTED</button></a>
+                        <a href="pages/form-login.html"><button class="learn-more__button">LEARN MORE</button></a>
+                        <a href="pages/form-consultation.html"><button class="get-started__button">GET STARTED</button></a>
                     </div>
                 </div>
                 <div class="main__page__image">
@@ -208,7 +242,7 @@
             </div>
             <section class="communities-block">
                 <div class="community__card">
-                    <img src="img/sports-card.jfif" alt="" class="img-card">
+                    <img src="img/sports-card.jfif" alt="" class="img-card" width="384px" height="250">
                     <div class="card__header">
                         <h4>Sports</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, veniam.</p>
@@ -216,7 +250,7 @@
                     </div>
                 </div>
                 <div class="community__card">
-                    <img src="img/adventure-card.jpg" alt="" class="img-card">
+                    <img src="img/adventure-card.jpg" alt="" class="img-card" width="384px" height="250">
                     <div class="card__header">
                         <h4>Adventure</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, tempore!</p>
@@ -224,7 +258,7 @@
                     </div>
                 </div>
                 <div class="community__card">
-                    <img src="img/gaming-card.jpg" alt="" class="img-card">
+                    <img src="img/gaming-card.jpg" alt="" class="img-card" width="384px" height="250">
                     <div class="card__header">
                         <h4>Gaming</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dignissimos!</p>
@@ -232,7 +266,7 @@
                     </div>
                 </div>
                 <div class="community__card">
-                    <img src="img/animals-card.jfif" alt="" class="img-card">
+                    <img src="img/animals-card.jfif" alt="" class="img-card" width="384px" height="250">
                     <div class="card__header">
                         <h4>Animal lovers</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos!</p>
@@ -240,7 +274,7 @@
                     </div>
                 </div>
                 <div class="community__card">
-                    <img src="img/music-card.jfif" alt="" class="img-card">
+                    <img src="img/music-card.jfif" alt="" class="img-card" width="384px" height="250">
                     <div class="card__header">
                         <h4>Music</h4>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -248,7 +282,7 @@
                     </div>
                 </div>
                 <div class="community__card">
-                    <img src="img/moto-card.jpg" alt="" class="img-card">
+                    <img src="img/moto-card.jpg" alt="" class="img-card" width="384px" height="250">
                     <div class="card__header">
                         <h4>Moto Racing</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -274,6 +308,14 @@
                     <a href="">Read more</a>
                 </div>
                 <div class="news__secondary-articles">
+                    <div class="secondary-article hidden-mobile">
+                        <img src="img/main-news-img.jpg" alt="">
+                        <div class="side-header">
+                            <h5>HEADLINE</h5>
+                            <h4>Sed imperdiet enim ligula, vitae viverra justo porta vel.</h4>
+                            <a href="">Read more</a>
+                        </div>
+                    </div>
                     <div class="secondary-article">
                         <img src="img/secondary-news-img.jpg" alt="">
                         <div class="side-header">
